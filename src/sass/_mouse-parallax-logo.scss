@@ -1,0 +1,40 @@
+.mouse-parallax {
+    overflow: hidden;
+}
+
+.photo-title-info {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.mouse-parallax-bg {
+    height: 200px !important;
+    position: absolute;
+    display: block;
+    padding-left: 73px;
+    transition: all 0.1s ease;
+    img {
+        @include margin-auto;
+        display: block;
+        margin-top: 25px;
+        width: 150px;
+        // margin-left: 0px;
+    }
+}
+
+.main-title-second {
+    a {
+        color: var(--text-color);
+    }
+    @include ext-font;
+    backdrop-filter: blur(0px);
+    transform: rotate(-360deg) !important;
+    font-size: 60px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    // margin-left: 30px;
+    margin-top: -30px;
+    padding: 87px 0 0 0;
+    height: 220px;
+}

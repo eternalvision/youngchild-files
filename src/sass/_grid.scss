@@ -1,0 +1,114 @@
+.gallery {
+    padding: var(--standart-30px);
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--standart-30px));
+    justify-content: center;
+    padding-top: 105px;
+}
+
+.image-card {
+    @include border-radius;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    flex-basis: calc(100% / 4 - var(--standart-30px));
+    margin-left: var(--standart-30px);
+    margin-top: var(--standart-30px);
+    height: 300px;
+    background-color: var(--inqury-bg-card);
+    transition: 500ms;
+    &__image {
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+        display: flex;
+        position: relative;
+        border-radius: 20px 20px 0 0;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    &__info {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        color: var(--text-color);
+        margin: auto;
+        padding: 10px;
+        height: 50px;
+        li {
+            text-align: center;
+        }
+    }
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.image-card__info {
+    li {
+        margin-right: 50px;
+        p {
+            @include ext-font;
+            line-height: 20px;
+        }
+        &:last-child {
+            margin-right: 0px;
+        }
+        &:nth-child(2) {
+            margin-top: -5px;
+        }
+    }
+}
+
+.heart-icon {
+    fill: var(--text-color);
+    width: 20px;
+    height: 20px;
+}
+
+.view-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.comments-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.download-ico {
+    width: 20px;
+    height: 20px;
+}
+
+.simple-lightbox {
+    @include blur;
+    background-color: var(--inqury-bg-color) !important;
+}
+
+.sl-image {
+    img {
+        @include border-radius;
+    }
+}
+
+.sl-wrapper {
+    .sl-close {
+        color: var(--text-color);
+        background-color: var(--inqury-bg-color);
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        margin-top: 0px;
+        padding-bottom: 7px;
+        font-family: SF Pro;
+    }
+    .sl-counter {
+        @include border-radius;
+        color: var(--text-color);
+        background-color: var(--inqury-bg-color);
+        padding: 15px;
+        margin-top: -1px;
+        margin-left: -9px;
+    }
+}

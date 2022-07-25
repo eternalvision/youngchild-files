@@ -1,0 +1,68 @@
+@import './root';
+@import './main-content';
+@import './lang';
+@import './burger-button';
+@import './media-inquiry';
+@import './mobile-blocks';
+@import './photo-info';
+@import '../../node_modules/simplelightbox/src/simple-lightbox.scss';
+@import './grid';
+@import './input-search';
+@import './preloader';
+@import './youtube';
+@import './mouse-parallax-logo';
+@import './footer';
+//
+* {
+    cursor: none;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+::selection {
+    background: #ffffff;
+    color: #000000;
+}
+
+body {
+    background-color: var(--body-color);
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    cursor: none !important;
+    text-decoration: none;
+}
+
+iframe {
+    display: block;
+    border-style: none;
+    margin: 0 auto;
+}
+
+.iPad-like-pointer {
+    background-color: rgba(214, 208, 206, 0.426) !important;
+}
+
+.sl-wrapper {
+    .sl-close {
+        right: 45px;
+    }
+    .sl-counter {
+        left: 45px;
+        font-weight: bold;
+    }
+}
+
+#NotiflixNotifyWrap {
+    z-index: 10000000000 !important;
+}

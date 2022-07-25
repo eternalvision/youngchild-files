@@ -1,0 +1,82 @@
+{
+    "eng": {
+        "langChange": "EN",
+
+        "firstSpec": "ART DIRECTOR",
+        "secondSpec": "CREATIVE DIRECTOR",
+        "thirdSpec": "DESIGNER",
+
+        "firstName": "Sasha Pryadchenko",
+        "secondName": "Sasha Pryadchenko",
+        "thirdName": "Sasha Pryadchenko",
+
+        "Menu": "MENU*",
+        "Footer": "© AUGUST 2021 - ...",
+        "Hide": "HIDE",
+        "Home": "Home",
+        "homeUnder": "HOME",
+        "About": "About",
+        "Help": "Help",
+        "aboutSite": "The task of the organization, especially the continuous quantitative growth and the scope of our activity allows us to evaluate the importance of the further directions of development of the mass participation system? Practical experience shows that the beginning of the daily work of the position formation contributes to the relevance of the impact forms.The task of the organization, especially the scope and place of the training entails the process of implementation and modernization of further lines of development of the project ? ",
+
+        "Name": "Name",
+        "Number": "Number",
+        "Email": "Email",
+        "Question": "Your question",
+        "Submit": "Submit"
+    },
+    "rus": {
+        "langChange": "RU",
+
+        "firstSpec": "ХУДОЖЕСТВЕННЫЙ ДИРЕКТОР",
+        "secondSpec": "КРЕАТИВНЫЙ ДИРЕКТОР ",
+        "thirdSpec": "ДИЗАЙНЕР",
+
+        "firstName": "Sasha Pryadchenko",
+        "secondName": "Sasha Pryadchenko",
+        "thirdName": "Sasha Pryadchenko",
+
+        "Menu": "МЕНЮ*",
+        "Footer": "© АВГУСТ 2021 - ...",
+        "Hide": "СКРЫТЬ",
+        "Home": "Домой",
+        "homeUnder": "ДОМОЙ",
+        "About": "Обо Мне",
+        "Help": "Вопросы?",
+        "aboutSite": "Задача организации, в особенности же постоянный количественный рост и сфера нашей активности позволяет оценить значение дальнейших направлений развитая системы массового участия ? Практический опыт показывает, что начало повседневной работы по формированию позиции способствует повышению актуальности форм воздействия.Задача организации, в особенности же рамки и место обучения кадров влечет за собой процесс внедрения и модернизации дальнейших направленийразвития проекта ? ",
+
+        "Name": "Имя, фамилия",
+        "Number": "Номер",
+        "Email": "Эл. адрес",
+        "Question": "Ваш вопрос",
+        "Submit": "Отправить"
+    },
+    "uk": {
+        "langChange": "UK",
+
+        "firstSpec": "ХУДОЖНІЙ ДИРЕКТОР",
+        "secondSpec": "КРЕАТИВНИЙ ДИРЕКТОР",
+        "thirdSpec": "ДИЗАЙНЕР",
+
+        "firstName": "Sasha Pryadchenko",
+        "secondName": "Sasha Pryadchenko",
+        "thirdName": "Sasha Pryadchenko",
+
+        "firstMenu": "О НАС",
+        "secondMenu": "КОНТАКТИ",
+        "Menu": "МЕНЮ*",
+        "Footer": "© СЕРПЕНЬ 2021 - ...",
+        "Hide": "ПРИХОВАТИ",
+        "Home": "Додому",
+        "homeUnder": "ДОДОМУ",
+        "About": "Про мене",
+        "Help": "Питання?",
+        "aboutSite": "Завдання організації, особливо ж постійний кількісний ріст і сфера нашої активності дозволяє оцінити значення подальших напрямків розвинена системи масової участі? Практичний досвід показує, що початок повсякденної роботи по формуванню позиції сприяє підвищенню актуальності форм воздействія.Задача організації, особливо ж рамки і місце навчання кадрів тягне за собою процес впровадження і модернізації подальших напрямків розвитку проекту?",
+
+        "Name": "Iм'я, Прiзвище",
+        "Number": "Номер",
+        "Email": "Електронна адреса",
+        "Question": "Ваше питання",
+        "Submit": "Вiдправити"
+    }
+}

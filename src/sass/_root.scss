@@ -1,0 +1,143 @@
+:root {
+    --body-color: rgb(38, 38, 44) !important;
+    // text
+    --text-color: #f2f2f2;
+    --text-second-color: #8d8d8d;
+    --hover: #6a6376;
+    // links
+    --link-color: #3f5c6c;
+    //
+    --border-radius: 20px;
+    --border-50: 50%;
+    //
+    --selection-color: rgba(255, 0, 0, 0.5);
+    //
+    // burger button
+    --btn-background-color: rgba(0, 0, 0, 0.213);
+    --background-header: rgba(65, 61, 61, 0.213);
+    --menu-bg-color: rgba(0, 0, 0, 0.755);
+    //
+    --inqury-bg-color: rgba(0, 0, 0, 0.487);
+    --inqury-bg-card: rgb(0, 0, 0);
+    //
+    --input-radius: 20px;
+    --btn-width: 40px;
+    --input-width: calc(var(--btn-width) * 10);
+    --border: 2px;
+    --standart-30px: 30px;
+}
+
+@mixin zero {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+@mixin blur {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-filter: blur(10px);
+}
+
+@mixin absolute {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+@mixin posAbs {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+@mixin margin-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin border-radius {
+    border-radius: var(--border-radius);
+}
+
+@mixin fullsize {
+    width: 100%;
+    height: 100%;
+}
+
+@mixin fade-in {
+    @-webkit-keyframes fade-in {
+        0% {
+            opacity: 0.1;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @-moz-keyframes fade-in {
+        0% {
+            opacity: 0.1;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @-o-keyframes fade-in {
+        0% {
+            opacity: 0.1;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes fade-in {
+        0% {
+            opacity: 0.1;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
+@mixin fade-animation {
+    @include fade-in;
+    -webkit-animation: fade-in 2000ms ease-in-out;
+    -moz-animation: fade-in 2000ms ease-in-out;
+    -o-animation: fade-in 2000ms ease-in-out;
+}
+
+@mixin fade-animation-img {
+    @include fade-in;
+    -webkit-animation: fade-in 2000ms ease-in-out;
+    -moz-animation: fade-in 2000ms ease-in-out;
+    -o-animation: fade-in 2000ms ease-in-out;
+}
+
+@mixin nympha-font {
+    font-family: Nympha Trial Regular;
+}
+
+@mixin ext-font {
+    font-family: Ext;
+    line-height: 1.55;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Nympha Trial Regular;
+    src: url('../font/LCT Nympha Trial/TTF/NymphaTrial-Regular.ttf');
+}
+
+@font-face {
+    font-family: Ext;
+    src: url('../font/Ext.woff') format('woff');
+}
+
+@font-face {
+    font-family: SF Pro;
+    src: url('../font/Ext.woff') format('woff');
+    /* iOS 4.1- */
+}

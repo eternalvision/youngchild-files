@@ -1,0 +1,54 @@
+.mobile-img {
+    display: block;
+    input {
+        width: 800px;
+        padding-left: 20px;
+        // margin: 0 auto;
+    }
+    button {
+        margin-left: 180px;
+    }
+    input,
+    button {
+        @include fade-animation;
+        z-index: 20;
+        position: fixed;
+    }
+    input {
+        @include fade-animation;
+        @include blur;
+        border: none;
+        padding: 0 0 0 30px;
+        font-size: 18px;
+        margin: 72px 0 0 32px;
+        border-radius: 80px;
+        position: fixed;
+        width: 216px;
+        height: 50px;
+        background-color: var(--inqury-bg-color);
+        color: var(--text-color);
+    }
+    input:checked {
+        background-color: var(--text-color) !important;
+    }
+    button {
+        margin: 72px 0 0 199px;
+        border: none;
+        border-radius: var(--border-50);
+        width: 48px;
+        height: 48px;
+        background: linear-gradient(270deg, rgb(0, 0, 0), #16161d, rgb(0, 0, 0));
+        color: var(--text-color);
+        font-weight: 400;
+        transform: rotate(90deg);
+        font-family: FS Pro;
+        font-size: 30px;
+        img {
+            border-radius: var(--border-50);
+        }
+        transition: 500ms transform;
+        &:hover {
+            transform: rotate(360deg);
+        }
+    }
+}

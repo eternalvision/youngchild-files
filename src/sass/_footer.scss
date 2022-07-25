@@ -1,0 +1,35 @@
+.footer {
+    @include blur;
+    z-index: 1;
+    position: fixed;
+    color: var(--text-color);
+    background: linear-gradient(18deg, rgb(22, 22, 29), rgb(70, 67, 77));
+    bottom: 0;
+    width: 100%;
+    height: 155px;
+    h4 {
+        @include ext-font;
+        line-height: 1.55;
+        font-weight: 400;
+        text-align: center;
+        font-size: 60px;
+    }
+}
+
+.mail-link {
+    display: block;
+    width: 50px;
+    svg {
+        transition: 500ms;
+        &:hover {
+            fill: var(--hover);
+            transform: scale(1.5);
+        }
+    }
+}
+
+.list-footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

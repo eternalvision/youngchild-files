@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YOUNGCHILD*</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./sass/main.scss" />
+    <link rel="shortcut icon" href="./svg/teddy-bear.svg" type="image/x-icon" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <style>
+        .menu-header {
+            margin-top: -30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="preloader__row">
+            <div class="preloader__item"></div>
+
+            <div class="preloader__item"></div>
+        </div>
+    </div>
+    <header class="menu-header">
+        <div class="header-menu">
+            <canvas class="canvas-menu" id="canvas-basic"></canvas>
+            <button class="header__button nav-btn-js" type="button">
+          <span class="none-menu localization">M*</span
+          ><span id="menu" caption="Menu" class="none-tablet localization"></span>
+        </button>
+            <nav class="header__nav nav-js" data-active="false">
+                <ul class="header__menu">
+                    <li class="header__menu-item">
+                        <a id="menuHome" caption="Home" class="localization" href="../src/index.html"></a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a id="menuAbout" caption="About" class="localization" target="_blank" href="../src/about.html"></a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a id="menuHelp" caption="Help" class="localization" target="_blank" href="../src/help.html"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <include src="./partials/main-home.html"></include>
+        <include src="./partials/lang.html"></include>
+    </main>
+    <include src="./partials/footer.html"></include>
+
+    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+    <script src="./index.js"></script>
+    <script src="./js/preloader.js"></script>
+    <script src="./js/constants.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/lang.js"></script>
+    <script src="./js/gsap.js"></script>
+    <script src="./js/burgerMenu.js"></script>
+    <script src="./js/granimGradient.js"></script>
+    <script src="./js/mouse-parallax-ico.js"></script>
+
+    <!--  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.skypack.dev/pin/morphing-pointer@v0.4.0-yWHOX5pIIfN7migaUatC/mode=imports/optimized/morphing-pointer.js"></script>
+
+    <!--  -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</body>
+
+</html>

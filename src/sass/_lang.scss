@@ -1,0 +1,125 @@
+.authors {
+    @include fade-animation;
+}
+
+.section-lang {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    transform: rotate(-45deg);
+    z-index: 3;
+}
+
+.container-lang {
+    width: 150px;
+    height: 200px;
+    position: relative;
+    margin: 0 auto;
+}
+
+header p {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+.lang-title {
+    @include fade-animation;
+    font-family: Nympha Trial Regular;
+    font-size: 40px;
+    display: inline-block;
+    color: var(--text-color);
+    padding-left: -50px;
+    padding-bottom: 40px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: rotate(45deg);
+    margin-right: 85px;
+    margin-bottom: -15px;
+    margin-top: 40px;
+}
+
+.circ {
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    position: absolute;
+    left: 61%;
+    top: 58%;
+    transform: translate(-50%, -50%);
+    // cursor: pointer;
+    img {
+        width: 40px;
+        border-radius: var(--border-50);
+        transform: rotate(45deg);
+    }
+}
+
+.mb {
+    @include blur;
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    background-color: var(--inqury-bg-color);
+    z-index: 4;
+    position: relative;
+    overflow: hidden;
+}
+
+.lb,
+.tb,
+.rb {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    background-color: var(--grey);
+    @include fade-animation;
+}
+
+.grid {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+}
+
+.grid-main {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
+.grid-main svg {
+    width: 30px;
+    height: 30px;
+}
+
+.grid svg {
+    width: 24px;
+    height: 24px;
+}
+
+// .grid rect,
+// .grid-main rect {
+//     fill: var(--green);
+// }
+.cancel {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+}
+
+.cancel svg {
+    width: 12.5px;
+    height: 12.5px;
+    transform: rotate(45deg);
+}
+
+.cancel path {
+    stroke: var(--text-color);
+    stroke-width: 7px;
+    stroke-linecap: round;
+}

@@ -1,0 +1,50 @@
+{
+  "name": "parcel-project-template",
+  "version": "1.1.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://goitacademy.github.io/parcel-project-template",
+  "scripts": {
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+  },
+  "keywords": [],
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
+    "@vue/devtools": "^5.3.4",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "posthtml-include": "^1.6.2",
+    "sass": "^1.32.8"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "axios": "^0.21.3",
+    "circular-revealer": "0.0.9",
+    "debounce": "^1.2.1",
+    "flag-icon-css": "^3.5.0",
+    "galleria": "^1.6.1",
+    "granim": "^2.0.0",
+    "gsap": "^3.7.1",
+    "imagesloaded": "^4.1.4",
+    "json-server": "^0.16.3",
+    "modern-normalize": "^1.1.0",
+    "morphing-pointer": "^0.5.4",
+    "notiflix": "^3.0.2",
+    "onscreen": "^1.4.0",
+    "simplelightbox": "^2.8.0",
+    "vue": "^2.6.14",
+    "wow.js": "^1.2.2"
+  }
+}

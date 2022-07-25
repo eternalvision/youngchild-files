@@ -1,0 +1,68 @@
+@mixin photo-info {
+    fill: var(--text-color);
+    position: absolute;
+}
+
+@mixin border-photo-info {
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+}
+
+.photo-info {
+    @include blur;
+    @include border-photo-info;
+    //
+    content: '';
+    color: var(--text-color);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.528), rgba(0, 0, 0, 0.405), rgba(0, 0, 0, 0));
+    position: absolute;
+    width: 300px;
+    height: 70px;
+    margin-top: -70px;
+    //
+    .dwnld-ico {
+        @include photo-info;
+        //
+        right: 0;
+        margin: -23px 38px 0 0;
+    }
+    //
+    p {
+        font-family: SF Pro;
+        font-size: 15px;
+        //
+        &:first-child {
+            padding-left: 20px;
+            padding-top: 35px;
+            //
+            svg {
+                @include photo-info;
+                //
+                top: 0;
+                margin: 12px 0 0 5px;
+            }
+        }
+        //
+        &:nth-child(2) {
+            margin-top: -70px;
+            text-align: center;
+            padding-top: 35px;
+        }
+    }
+    //
+    a {
+        color: var(--text-color);
+        margin-left: 220px;
+        //
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.likes {
+    width: 10px;
+    text-align: center;
+    margin-left: 2px;
+    font-size: 15px;
+}

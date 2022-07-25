@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Y-HELP*</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./sass/main.scss" />
+    <link rel="stylesheet" href="./sass/_form.scss" />
+    <link rel="shortcut icon" href="./svg/teddy-bear.svg" type="image/x-icon" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <include src="./partials/header.html"></include>
+
+    <main>
+        <section class="section-main">
+            <include src="./partials/authors.html"></include>
+            <include src="./partials/main-help.html"></include>
+            <include src="./partials/lang.html"></include>
+        </section>
+    </main>
+    <include src="./partials/footer.html"></include>
+
+    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+    <script src="./js/constants.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/lang.js"></script>
+    <!-- <script src="./js/gsap.js"></script> -->
+    <script src="./js/burgerMenu.js"></script>
+    <script src="./js/granimGradient.js"></script>
+    <!-- <script src="./js/rendering.js"></script> -->
+    <script src="./index.js"></script>
+    <script src="./js/preloader.js"></script>
+    <script src="./js/canvas-form.js"></script>
+
+    <!--  -->
+
+    <script src="https://cdn.skypack.dev/pin/morphing-pointer@v0.4.0-yWHOX5pIIfN7migaUatC/mode=imports/optimized/morphing-pointer.js"></script>
+    <!--  -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</body>
+
+</html>

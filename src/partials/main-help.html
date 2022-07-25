@@ -1,0 +1,49 @@
+<button id="authors-open"><span> A* </span></button>
+<section class="authors">
+    <button caption="Hide" class="localization" id="authors-hide"></button>
+
+    <ul id="author-1" data-pointer-type="content" class="person-list">
+        <li id="artDir" caption="firstSpec" class="localization"></li>
+        <li id="FirsAuthor" caption="firstName" class="localization"></li>
+    </ul>
+    <ul id="author-2" data-pointer-type="content" class="person-list">
+        <li id="creatDir" caption="secondSpec" class="localization"></li>
+        <li id="SecAuthor" caption="secondName" class="localization"></li>
+    </ul>
+    <ul id="author-3" data-pointer-type="content" class="person-list">
+        <li id="Design" caption="thirdSpec" class="localization"></li>
+        <li id="ThrAuthor" caption="thirdName" class="localization"></li>
+    </ul>
+</section>
+<div class="mouse-parallax">
+    <div class="mouse-parallax-bg">
+        <h1 id="main-second-text" class="main-title-second">HELP</h1>
+    </div>
+</div>
+<p data-pointer-type="content" class="about-par">
+    <span> Any questions?</span>
+</p>
+<canvas class="canvas"></canvas>
+
+<div class="form-wrapper">
+    <form class="formSubmit" action="./telegram.php" method="POST">
+        <!--  -->
+        <!--  -->
+        <label id="nameLabel" data-pointer-type="content" class="localization label" for="name" caption="Name"></label>
+        <input data-pointer-type="content" class="textWord" type="text" id="name" name="user_name" />
+        <!--  -->
+        <!--  -->
+        <label id="numberLabel" data-pointer-type="content" class="label localization" for="number" caption="Number"></label>
+        <input data-pointer-type="content" class="textWord" type="text" id="number" name="user_phone" />
+        <!--  -->
+        <!--  -->
+        <label id="emailLabel" data-pointer-type="content" class="label localization" for="email" caption="Email"></label>
+        <input data-pointer-type="content" class="textWord" type="text" id="email" name="user_email" />
+        <!--  -->
+        <!--  -->
+        <label id="textareaLabel" data-pointer-type="content" class="label localization" for="password" caption="Question"></label>
+        <textarea data-pointer-type="content" class="textWord" type="text" name="textarea"></textarea>
+
+        <button class="submit localization" caption="Submit" id="submit"></button>
+    </form>
+</div>

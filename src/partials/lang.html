@@ -1,0 +1,48 @@
+<section class="section-lang">
+    <div class="container-lang" id="app">
+        <!--  -->
+        <!--  -->
+        <button class="circ mb" @click="showMenu">
+      <layout-box-main :angle="boxAngle"></layout-box-main>
+      <cancel-icon></cancel-icon>
+    </button>
+        <!--  -->
+        <!--  -->
+        <button class="circ lb" @click="setLayout(180)">
+      <img class="first-country-change" src="./svg/ru.svg" alt="" />
+      <layout-box angle="180"> </layout-box>
+    </button>
+        <!--  -->
+        <!--  -->
+        <button class="circ tb" @click="setLayout(-90)">
+      <img class="second-country-change" src="./svg/us.svg" alt="" />
+      <layout-box angle="-90"> </layout-box>
+    </button>
+        <!--  -->
+        <!--  -->
+        <button class="circ rb" @click="setLayout(0)">
+      <img class="third-country-change" src="./svg/ua.svg" alt="" />
+      <layout-box angle="0"></layout-box>
+    </button>
+        <!-- -->
+        <!--  -->
+        <p id="langChange" class="lang-title">{{ choice }}</p>
+    </div>
+
+    <template id="layout-box">
+    <div class="grid"></div>
+  </template>
+
+    <template id="layout-box-main">
+    <div class="grid-main"></div>
+  </template>
+
+    <template id="cancel-icon">
+    <div class="cancel">
+      <svg viewBox="0 0 36 36">
+        <path d="M0 0 L 36 36" />
+        <path d="M36 0 L 0 36" />
+      </svg>
+    </div>
+  </template>
+</section>

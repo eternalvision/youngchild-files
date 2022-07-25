@@ -1,0 +1,18 @@
+.box {
+    padding-top: 158px;
+    display: block;
+    img {
+        padding-top: 20px;
+        border-radius: 50px;
+    }
+}
+
+// '&w=320&h=250&dpr=1' +
+#result {
+    li {
+        @include fade-animation;
+        img {
+            @include fade-animation;
+        }
+    }
+}
