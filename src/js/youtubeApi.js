@@ -1,6 +1,6 @@
-var key = 'AIzaSyAOrcr2nI9FoBHSvsUvSD7kBIB_7PDPkJA';
-var playlistId = 'PLfXL1l9xwHtzUye_4Ls1tUFzRxHaNtWKt';
-var URL = 'https://www.googleapis.com/youtube/v3/playlistItems';
+var key = '';
+var playlistId = '';
+var URL = '';
 
 var options = {
     part: 'snippet',
