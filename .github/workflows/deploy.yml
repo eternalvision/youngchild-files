@@ -1,23 +1,52 @@
-name: Build and deploy to GitHub Pages
+name: Build and Deploy
 
 on:
-  push:
-    branches: [main]
+    push:
+        branches:
+            - main # или ваша рабочая ветка
 
 jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v2.3.1
+    build-and-deploy:
+        runs-on: ubuntu-latest
 
-      - name: Install and Build 🔧
-        run: |
-          npm ci
-          npm run build
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v2
 
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@4.1.0
-        with:
-          branch: gh-pages
-          folder: dist
+            - name: Setup Node.js
+              uses: actions/setup-node@v1
+              with:
+                  node-version: "14"
+
+            - name: Install Dependencies
+              run: npm install
+
+            - name: Check if ./dist exists
+              id: check-dist
+              run: |
+                  if [[ -d "dist" ]]; then
+                    echo "Dist directory exists"
+                    echo "::set-output name=exists::true"
+                  else
+                    echo "Dist directory does not exist"
+                    echo "::set-output name=exists::false"
+                  fi
+
+            - name: Build
+              if: steps.check-dist.outputs.exists == 'false'
+              run: npm run build
+
+            - name: Push to dev branch
+              run: |
+                  git config --local user.email "action@github.com"
+                  git config --local user.name "GitHub Action"
+                  git checkout -B dev
+                  git add -f ./dist
+                  git commit -m "Add dist" || echo "No changes to commit"
+                  git remote set-url origin https://x-access-token:${{ secrets.MY_GITHUB_TOKEN }}@github.com/eternalvision/JobsApp-Transfer.git
+                  git push -u origin dev --force || true
+            - name: Deploy to GitHub Pages
+              uses: peaceiris/actions-gh-pages@v3
+              with:
+                  github_token: ${{ secrets.MY_GITHUB_TOKEN }}
+                  publish_dir: ./dist
