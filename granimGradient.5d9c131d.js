@@ -68,4 +68,4 @@ module.exports=require("./lib/Granim.js");
 },{"./lib/Granim.js":"LNaC"}],"tMhk":[function(require,module,exports) {
 "use strict";var e=require("morphing-pointer"),t=r(require("granim"));function r(e){return e&&e.__esModule?e:{default:e}}(0,e.initMorphingPointer)();var i=new t.default({element:"#canvas-basic",direction:"left-right",isPausedWhenNotInView:!0,stateTransitionSpeed:300,states:{"default-state":{gradients:[["rgb(53, 43, 70)","rgb(33, 31, 80)"],["#f9c9f9","#0575E6"],["#0575E6","#f9c9f9"],["rgb(33, 31, 80)","rgb(53, 43, 70)"]]}}});
 },{"morphing-pointer":"U9P6","granim":"KI3S"}]},{},["tMhk"], null)
-//# sourceMappingURL=/parcel-project-template/granimGradient.34af0d2c.js.map
+//# sourceMappingURL=/eternalvision/granimGradient.5d9c131d.js.map
